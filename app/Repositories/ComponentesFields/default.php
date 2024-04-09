@@ -1,0 +1,2 @@
+<?php
+$botao = ___($label);

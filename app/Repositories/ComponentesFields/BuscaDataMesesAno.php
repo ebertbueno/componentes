@@ -1,0 +1,24 @@
+<?php
+$BuscaData = '';
+$BuscaData .= '<select class="form-control" name="mes" id="mes" required="required">';
+$BuscaData .= '<option value="" class="form-control">Selecione</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')-1).'-07') ? 'selected="selected"' : '' ).' value="'.(date('Y')-1).'-07" class="form-control">Julho - '.(date('Y')-1).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')-1).'-08') ? 'selected="selected"' : '' ).' value="'.(date('Y')-1).'-08" class="form-control">Agosto - '.(date('Y')-1).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')-1).'-09') ? 'selected="selected"' : '' ).' value="'.(date('Y')-1).'-09" class="form-control">Setembro - '.(date('Y')-1).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')-1).'-10') ? 'selected="selected"' : '' ).' value="'.(date('Y')-1).'-10" class="form-control">Outubro - '.(date('Y')-1).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')-1).'-11') ? 'selected="selected"' : '' ).' value="'.(date('Y')-1).'-11" class="form-control">Novembro - '.(date('Y')-1).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')-1).'-12') ? 'selected="selected"' : '' ).' value="'.(date('Y')-1).'-12" class="form-control">Dezembro - '.(date('Y')-1).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')).'-01') ? 'selected="selected"' : '' ).' value="'.(date('Y')).'-01" class="form-control">Janeiro - '.(date('Y')).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')).'-02') ? 'selected="selected"' : '' ).' value="'.(date('Y')).'-02" class="form-control">Fevereiro - '.(date('Y')).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')).'-03') ? 'selected="selected"' : '' ).' value="'.(date('Y')).'-03" class="form-control">Março - '.(date('Y')).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')).'-04') ? 'selected="selected"' : '' ).' value="'.(date('Y')).'-04" class="form-control">Abril - '.(date('Y')).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')).'-05') ? 'selected="selected"' : '' ).' value="'.(date('Y')).'-05" class="form-control">Maio - '.(date('Y')).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')).'-06') ? 'selected="selected"' : '' ).' value="'.(date('Y')).'-06" class="form-control">Junho - '.(date('Y')).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')).'-07') ? 'selected="selected"' : '' ).' value="'.(date('Y')).'-07" class="form-control">Julho - '.(date('Y')).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')).'-08') ? 'selected="selected"' : '' ).' value="'.(date('Y')).'-08" class="form-control">Agosto - '.(date('Y')).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')).'-09') ? 'selected="selected"' : '' ).' value="'.(date('Y')).'-09" class="form-control">Setembro - '.(date('Y')).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')).'-10') ? 'selected="selected"' : '' ).' value="'.(date('Y')).'-10" class="form-control">Outubro - '.(date('Y')).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')).'-11') ? 'selected="selected"' : '' ).' value="'.(date('Y')).'-11" class="form-control">Novembro - '.(date('Y')).'</option>';
+$BuscaData .= '<option '.( ($data['mes']) === ((date('Y')).'-12') ? 'selected="selected"' : '' ).' value="'.(date('Y')).'-12" class="form-control">Dezembro - '.(date('Y')).'</option>';
+$BuscaData .= '</select>';
+$BuscaData .= '<div style="padding: 3px;" class="col-sm-2"><button id="botaoEnviar" class="btn btn-sm btn-primary btn-block '.$pullright.'"> <i class="fa fa-search"> </i> </button></div>';';

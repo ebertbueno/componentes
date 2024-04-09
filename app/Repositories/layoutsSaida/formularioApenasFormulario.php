@@ -1,0 +1,2 @@
+<?php
+$saida .= $retorno;

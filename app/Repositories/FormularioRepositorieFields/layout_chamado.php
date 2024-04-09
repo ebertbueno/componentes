@@ -1,0 +1,25 @@
+<?php
+$retorno = '<div class="form-group row" style="width: 100%;">';
+    $retorno .= '<label class="col-sm-' . $tamLabel . ' col-form-label">' . $required_label . ___($label) . '</label>';
+        $retorno .= '<div class="col-sm-' . $tamDiv . '">';
+            $retorno .= '<div class="row">';
+                $retorno .= '<div class="col-md-6 text-center">';
+                    $retorno .= '<label name="layout_chamado" value="chamado_apenas_botao" style="width: 100% !important">';
+                    $retorno .= '<li class="btn btn-block btn-light">';
+                    $retorno .= 'Apenas botão<br>';
+                    $retorno .= '<input '. ($valor_inicial === 'apenas_botao' ? ' checked' : Null ) .' type="radio" name="layout_chamado" id="layout_chamado" value="apenas_botao">';
+                    $retorno .= '</li>';
+                    $retorno .= '</label>';
+                $retorno .= '</div>';
+                $retorno .= '<div class="col-md-6 text-center">';
+                    $retorno .= '<label name="layout_chamado" value="chamado_bairros_valores" style="width: 100% !important">';
+                    $retorno .= '<li class="btn btn-block btn-light">';
+                    $retorno .= 'Bairros com valores<br>';
+                    $retorno .= '<input '. ($valor_inicial === 'bairros_valores' ? ' checked' : Null ) .' type="radio" name="layout_chamado" id="layout_chamado" value="bairros_valores">';
+                    $retorno .= '</li>';
+                    $retorno .= '</label>';
+                $retorno .= '</div>';
+            $retorno .= '</div>';
+        $retorno .= '</div>';
+        $retorno .= $msg_base;
+$retorno .= '</div>';
